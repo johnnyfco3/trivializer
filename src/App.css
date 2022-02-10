@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+body {
+  background-color: azure;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#start {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 20%;
+}
+#start h1 {
+  font-size: 4rem;
+  font-family: cursive;
+}
+#start button {
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  border-radius: 4rem;
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
+#questions form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#questions .choices label {
+  margin-right: 40px;
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
+#questions .choices input {
+  cursor: pointer;
+  border: 1px solid;
+}
+#questions form .bottom {
+  display: flex;
+  margin-top: 5%;
+}
+#questions form .bottom p {
+  padding-right: 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: darkslateblue;
+}
+#questions form .bottom button {
+  padding: 0 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4rem;
+  background-color: rgb(75, 101, 247);
+  cursor: pointer;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
